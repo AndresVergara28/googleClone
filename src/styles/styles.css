@@ -1,0 +1,181 @@
+/* resets */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+a :hover {
+  text-decoration: underline;
+}
+
+li {
+  list-style-type: none;
+  padding: 0.2rem 1rem;
+}
+ul {
+  display: flex;
+}
+
+:root {
+  --background-main: #383a5e;
+  --background-lighter: #40587c;
+  --main-green: #97c93e;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--background-main);
+  max-height: 100vh;
+}
+
+/* HEADER */
+header nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--background-main);
+}
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  height: 100%;
+  padding: 1rem;
+}
+header nav ul li a {
+  color: var(--white);
+  font-size: 20px;
+}
+
+header nav ul li  :hover {
+  text-decoration: underline;
+}
+
+/* BODY */
+main {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-logo-container img {
+  width: 8rem;
+}
+.main-logo-container span {
+  font-size: 8rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-stretch: condensed;
+  font-weight: bolder;
+  margin-left: 10px;
+  text-transform: capitalize;
+  color: var(--main-green);
+}
+
+.main-input-container {
+  width: 700px;
+}
+
+.main-input-container .input-simulator {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+.main-input-container :hover {
+  box-shadow: 0px 1px 4px 0 var(--white);
+  border-color: black;
+}
+
+.main-input-container .input-simulator span {
+  margin: 0 1rem;
+  cursor: pointer;
+  box-shadow: none;
+}
+.main-input-container .input-simulator span svg {
+  fill: #121f3d;
+  box-shadow: none;
+  opacity: 0.65;
+}
+
+.main-input-container .input-simulator input {
+  width: 100%;
+  box-shadow: none;
+  background-color: none;
+  border: none;
+  height: 95%;
+  font-size: 20px;
+  outline: none;
+}
+
+.main-buttons-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+.main-buttons-container div {
+  height: 36px;
+}
+
+.main-buttons-container div button {
+  cursor: pointer;
+  height: 100%;
+  background-color: #303134;
+  border: 1px solid #303134;
+  border-radius: 4px;
+  color: #e8eaed;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+}
+
+.main-parrafo-container {
+  margin-top: 100px;
+  color: var(--white);
+}
+/* FOOTER */
+footer {
+  background-color: var(--background-main);
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 0.5rem;
+  
+
+}
+
+footer nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-icon a {
+  background-image: url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+}
